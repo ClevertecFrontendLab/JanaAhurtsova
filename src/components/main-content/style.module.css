@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+    max-width: 800px;
+
+    .cardsWarapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .card {
+            box-shadow: 0 2px 0 0 #0000000B;
+
+            .app {
+                font-weight: 500;
+                margin: 0;
+                color: var(--character-light-title-85);
+                /* white-space: break-spaces; */
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,21 @@
+.footer {
+    margin-top: 132px;
+    padding: 24px 24px 42px;
+
+    .link {
+        display: flex;
+        align-items: end;
+
+
+        .feedback {
+            color: var(--primary-light-6);
+        }
+    }
+
+    .cardWrapper {
+        display: flex;
+        justify-content: end;
+    }
+
+
+}

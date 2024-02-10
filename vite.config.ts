@@ -2,10 +2,11 @@ import path from 'path';
 
 import react from '@vitejs/plugin-react';
 import tsconfigPaths from 'vite-tsconfig-paths';
+import svgr from 'vite-plugin-svgr';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    plugins: [react(), tsconfigPaths()],
+    plugins: [react(), tsconfigPaths(), svgr()],
     server: {
         host: true,
         port: 3000,
@@ -18,7 +19,7 @@ export default defineConfig({
             '@hooks': path.resolve(__dirname, 'src/hooks'),
             '@pages': path.resolve(__dirname, 'src/pages'),
             '@redux': path.resolve(__dirname, 'src/redux'),
-            '@types': path.resolve(__dirname, 'src/types'),
+            '@type': path.resolve(__dirname, 'src/types'),
             '@utils': path.resolve(__dirname, 'src/utils'),
         },
     },

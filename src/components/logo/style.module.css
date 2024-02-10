@@ -1,0 +1,8 @@
+.cleverfit {
+    object-fit: contain;
+    height: 33px;
+}
+
+.logo {
+    padding-left: 30px;
+}

@@ -1,0 +1,6 @@
+.menu {
+    li {
+        display: flex;
+        margin: 0 !important;
+    }
+}

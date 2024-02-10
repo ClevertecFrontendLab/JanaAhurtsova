@@ -1,0 +1,41 @@
+.sidebar {
+    box-shadow: 0 2px 8px 0 #00000026;
+    position: relative;
+    padding: 45px 0 0;
+    /* height: 100vh; */
+
+    :global .ant-layout-sider-children {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .triggerWrapper {
+        /* filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.1)); */
+        position: absolute;
+        top: calc(50% - 33px);
+        right: -20px;
+        z-index: 100;
+
+        .trigger {
+            height: 66px;
+            width: 21px;
+            padding: 0;
+            border: none;
+            clip-path: polygon(0 0, 99% 11%, 99% 88%, 0% 100%);
+
+            svg {
+                fill: var(--character-light-secondary-45);
+                width: 14px;
+                height: 14px;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 55px;
+        flex: auto;
+    }
+}
+
