@@ -10,8 +10,8 @@ const advantages = [
 export const Benefits = () => (
     <dl className={styles.benefits}>
         <dt>С CleverFit ты сможешь:</dt>
-        {advantages.map((item) => (
-            <dd>{item}</dd>
+        {advantages.map((item, index) => (
+            <dd key={'advantages'+index}>{item}</dd>
         ))}
     </dl>
 );

@@ -17,7 +17,7 @@ export const CardStart = () => {
     return (
         <Row gutter={md ? [16, 0] : [0, 10]}>
             {cards.map((card) => (
-                <Col md={8} sm={24} xs={24}>
+                <Col md={8} sm={24} xs={24} key={card.name}>
                     <CardAction title={card.title} icon={card.icon} name={card.name} />
                 </Col>
             ))}
