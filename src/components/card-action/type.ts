@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
 
-export interface CardActionProps {
+export type CardActionProps = {
     title: string;
     icon: ReactNode;
     name: string;
-}
+};

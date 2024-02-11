@@ -1,4 +1,4 @@
-export interface MobileMode {
+export type MobileMode = {
     isMobile: boolean;
     collapsed: boolean;
-}
+};

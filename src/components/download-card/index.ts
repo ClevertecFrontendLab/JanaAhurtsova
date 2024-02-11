@@ -1,1 +1,1 @@
-export { DownloadCard } from "./download-card";
+export { DownloadCard } from './download-card';

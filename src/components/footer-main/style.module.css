@@ -19,9 +19,7 @@
     }
 }
 
-
 @media screen and (max-width: 768px) {
-
     .footer {
         margin-top: 0;
         padding: 0 1.6rem 4.2rem;
@@ -36,5 +34,4 @@
             order: 1;
         }
     }
-
 }

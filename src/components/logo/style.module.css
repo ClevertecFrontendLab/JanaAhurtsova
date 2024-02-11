@@ -11,19 +11,13 @@
 }
 
 .fit {
-    width: 3rem;
+    width: 3.5rem;
+    height: 3.34rem;
 }
 
-
-@media screen and (max-width: 576px){
-
+@media screen and (max-width: 576px) {
     .cleverfit {
         width: 7.2rem;
         margin-left: 0;
     }
-
-    /* .logo{
-        padding-left: 0;
-    } */
-
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-// import { Provider } from 'react-redux';
 import { HashRouter, Route, Routes } from 'react-router-dom';
 
-// import { store } from '@redux/configure-store';
 import { MainPage } from './pages';
 
 import 'antd/dist/antd.css';
@@ -16,11 +14,11 @@ const root = createRoot(domNode);
 root.render(
     <React.StrictMode>
         {/* <Provider store={store}> */}
-            <HashRouter>
-                <Routes>
-                    <Route path='/' element={<MainPage />} />
-                </Routes>
-            </HashRouter>
-    {/* </Provider> */}
+        <HashRouter>
+            <Routes>
+                <Route path='/' element={<MainPage />} />
+            </Routes>
+        </HashRouter>
+        {/* </Provider> */}
     </React.StrictMode>,
 );

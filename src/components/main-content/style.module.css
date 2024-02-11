@@ -5,34 +5,22 @@
     padding: 2.4rem;
     max-width: 80rem;
 
-    .cardsWarapper {
+    .cardsWrapper {
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
 
-        .card {
-            box-shadow: 0 2px 0 0 #0000000B;
-
-            .app {
-                font-weight: 500;
-                margin: 0;
-                color: var(--character-light-title-85);
-                line-height: 1.3;
-            }
+        .app {
+            font-weight: 500;
+            margin: 0;
+            color: var(--character-light-title-85);
+            line-height: 1.3;
         }
     }
 }
 
 @media screen and (max-width: 650px) {
-
-    .content{
+    .content {
         padding: 2.4rem 1.6rem;
-
-        .card {
-
-            :global .ant-card-body {
-                padding: 1.6rem;
-            }
-        }
     }
 }

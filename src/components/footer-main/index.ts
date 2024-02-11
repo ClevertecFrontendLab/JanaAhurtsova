@@ -1,1 +1,1 @@
-export { FooterMain } from "./footer-main";
+export { FooterMain } from './footer-main';

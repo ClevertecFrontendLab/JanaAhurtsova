@@ -1,13 +1,14 @@
-import { Navigation } from "@components/navigation";
-import { NAVIGATION_LINKS } from "@constants/main-page/constants";
-import { Button, Col, Grid, Row, Typography } from "antd";
-import { SettingOutlined } from "@ant-design/icons";
-import styles from "./style.module.css";
+import { Navigation } from '@components/navigation';
+import { NAVIGATION_LINKS } from '@constants/main-page/constants';
+import { Button, Col, Grid, Row, Typography } from 'antd';
+import { SettingOutlined } from '@ant-design/icons';
+import styles from './style.module.css';
 
 const { useBreakpoint } = Grid;
 
 export const Header = () => {
     const { xs, sm } = useBreakpoint();
+
     return (
         <header className={styles.header}>
             <Navigation links={NAVIGATION_LINKS} />
@@ -31,4 +32,4 @@ export const Header = () => {
             </Row>
         </header>
     );
-}
+};

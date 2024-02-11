@@ -1,11 +1,12 @@
-import { useState } from "react";
-import Sider from "antd/lib/layout/Sider";
-import { MenuSidebar } from "./menu";
-import styles from "./style.module.css";
-import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
-import { Logo } from "@components/logo";
-import { Logout } from "./logout";
-import { Button } from "antd";
+import { useState } from 'react';
+import { Button } from 'antd';
+import Sider from 'antd/lib/layout/Sider';
+import { Logout } from './logout';
+import { MenuSidebar } from './menu';
+import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { Logo } from '@components/logo';
+import { Paths } from '@constants/enums/paths';
+import styles from './style.module.css';
 
 export const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
@@ -36,7 +37,7 @@ export const Sidebar = () => {
             onBreakpoint={onBreakpoint}
             className={styles.sidebar}
             width={width}
-            style={{position: isMobile? "fixed" : "relative"}}
+            style={{ position: isMobile ? 'fixed' : 'relative' }}
         >
             <div className={styles.triggerWrapper}>
                 <Button
@@ -48,11 +49,10 @@ export const Sidebar = () => {
                 </Button>
             </div>
             <div className={styles.menu}>
-                <Logo href={'/'} show={collapsed} />
+                <Logo href={Paths.MAIN} show={collapsed} />
                 <MenuSidebar isMobile={isMobile} collapsed={collapsed} />
             </div>
-            <Logout isMobile={isMobile} collapsed={collapsed}/>
+            <Logout isMobile={isMobile} collapsed={collapsed} />
         </Sider>
     );
-}
-
+};

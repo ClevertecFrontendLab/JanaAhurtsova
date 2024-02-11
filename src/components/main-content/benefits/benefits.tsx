@@ -22,4 +22,4 @@ export const Benefits = () => {
             </dd>
         </dl>
     );
-}
+};

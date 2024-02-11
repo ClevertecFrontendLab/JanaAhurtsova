@@ -4,10 +4,11 @@ import LogoIcon from '/logo.png';
 import { LogoProps } from './type';
 import styles from './style.module.css';
 
-const {useBreakpoint} = Grid;
+const { useBreakpoint } = Grid;
 
 export const Logo = (props: LogoProps) => {
-    const {xs} = useBreakpoint();
+    const { xs } = useBreakpoint();
+
     return (
         <a href={props.href} className={styles.logo}>
             {!props.show && <img src={LogoIcon} className={styles.cleverfit} alt={'CleverFit'} />}

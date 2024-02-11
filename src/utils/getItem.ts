@@ -1,17 +1,17 @@
-import { MenuItem } from "@type/menu-item";
+import { ItemType } from 'src/types/menu-item-type';
 
 export function getItem(
     label: React.ReactNode,
     key: React.Key,
     icon?: React.ReactNode,
-    children?: MenuItem[],
+    children?: ItemType[],
     type?: 'group',
-): MenuItem {
+): ItemType {
     return {
         key,
         icon,
         children,
         label,
         type,
-    } as MenuItem;
+    };
 }

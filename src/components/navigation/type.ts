@@ -1,3 +1,3 @@
-export interface NavigationProps {
-    links: {name: string, href: string}[];
-}
+export type NavigationProps = {
+    links: { name: string; href: string }[];
+};
