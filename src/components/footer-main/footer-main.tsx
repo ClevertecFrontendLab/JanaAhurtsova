@@ -4,17 +4,15 @@ import styles from "./style.module.css";
 
 export const FooterMain = () => {
     return (
-        <footer className={styles.footer}>
-            <Row>
-                <Col span={12} className={styles.link}>
-                    <Button type='link' size="large" className={styles.feedback}>
-                        Смотреть отзывы
-                    </Button>
-                </Col>
-                <Col span={12} className={styles.cardWrapper}>
-                    <DownloadCard />
-                </Col>
-            </Row>
-        </footer>
+        <Row gutter={[0, 24]} className={styles.footer}>
+            <Col md={12} sm={24} xs={24} className={styles.link}>
+                <Button type='link' size='large' className={styles.feedback}>
+                    Смотреть отзывы
+                </Button>
+            </Col>
+            <Col md={12} sm={24} xs={24} className={styles.cardWrapper}>
+                <DownloadCard />
+            </Col>
+        </Row>
     );
 }

@@ -1,8 +1,6 @@
 .sidebar {
     box-shadow: 0 2px 8px 0 #00000026;
-    position: relative;
-    padding: 45px 0 0;
-    /* height: 100vh; */
+    padding: 4.5rem 0 0;
 
     :global .ant-layout-sider-children {
         display: flex;
@@ -13,20 +11,20 @@
         /* filter: drop-shadow(2px 0px 4px rgba(0, 0, 0, 0.1)); */
         position: absolute;
         top: calc(50% - 33px);
-        right: -20px;
+        right: -2rem;
         z-index: 100;
 
         .trigger {
-            height: 66px;
-            width: 21px;
+            height: 6.6rem;
+            width: 2.1rem;
             padding: 0;
             border: none;
             clip-path: polygon(0 0, 99% 11%, 99% 88%, 0% 100%);
 
             svg {
                 fill: var(--character-light-secondary-45);
-                width: 14px;
-                height: 14px;
+                width: 1.4rem;
+                height: 1.4rem;
             }
         }
     }
@@ -34,8 +32,31 @@
     .menu {
         display: flex;
         flex-direction: column;
-        gap: 55px;
+        gap: 5.5rem;
         flex: auto;
     }
 }
 
+@media screen and (max-width: 576px) {
+
+    .sidebar {
+        padding: 1.6rem 0 0;
+        height: 100%;
+        z-index: 99;
+
+        .triggerWrapper {
+
+            top: 2.4rem;
+            right: -3.1rem;
+
+            .trigger {
+                width: 3.2rem;
+                height: 4.8rem;
+            }
+        }
+
+        .menu {
+            gap: 2.4rem;
+        }
+    }
+}

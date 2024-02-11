@@ -32,10 +32,11 @@ export const Sidebar = () => {
             collapsed={collapsed}
             collapsible
             collapsedWidth={collapsedWidth}
-            breakpoint='xs'
+            breakpoint='sm'
             onBreakpoint={onBreakpoint}
             className={styles.sidebar}
             width={width}
+            style={{position: isMobile? "fixed" : "relative"}}
         >
             <div className={styles.triggerWrapper}>
                 <Button
@@ -50,7 +51,7 @@ export const Sidebar = () => {
                 <Logo href={'/'} show={collapsed} />
                 <MenuSidebar isMobile={isMobile} collapsed={collapsed} />
             </div>
-            <Logout isMobile={isMobile} />
+            <Logout isMobile={isMobile} collapsed={collapsed}/>
         </Sider>
     );
 }

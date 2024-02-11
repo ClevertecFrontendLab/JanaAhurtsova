@@ -1,6 +1,26 @@
-.menu {
-    li {
+.logout {
+    padding: 0.2rem 0.1rem 0.5rem;
+    overflow: hidden;
+
+    .button {
         display: flex;
-        margin: 0 !important;
+        align-items: center;
+        overflow: hidden;
+        gap: 1rem;
     }
+
+    .icon {
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
 }

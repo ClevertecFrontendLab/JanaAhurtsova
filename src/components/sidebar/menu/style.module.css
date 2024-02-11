@@ -1,9 +1,24 @@
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.7rem;
+
+    :global li.ant-menu-item.ant-menu-item-only-child {
+        margin: 0;
+    }
 
     .icon {
         color: var(--primary-light-9);
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .menu {
+        gap: 1rem;
+
+        :global li.ant-menu-item.ant-menu-item-only-child {
+            padding: 0 0.8rem;
+        }
     }
 }
