@@ -1,3 +1,4 @@
+import { FC } from 'react';
 import { Grid } from 'antd';
 import FitIcon from '/fit.png';
 import LogoIcon from '/logo.png';
@@ -6,13 +7,13 @@ import styles from './style.module.css';
 
 const { useBreakpoint } = Grid;
 
-export const Logo = (props: LogoProps) => {
+export const Logo: FC<LogoProps> = ({ href, show }) => {
     const { xs } = useBreakpoint();
 
     return (
-        <a href={props.href} className={styles.logo}>
-            {!props.show && <img src={LogoIcon} className={styles.cleverfit} alt={'CleverFit'} />}
-            {!xs && props.show && <img src={FitIcon} className={styles.fit} alt={'fit'} />}
+        <a href={href} className={styles.logo}>
+            {!show && <img src={LogoIcon} className={styles.cleverfit} alt={'CleverFit'} />}
+            {!xs && show && <img src={FitIcon} className={styles.fit} alt={'fit'} />}
         </a>
     );
 };

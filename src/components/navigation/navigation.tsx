@@ -1,11 +1,12 @@
+import { FC } from 'react';
 import { NavLink } from 'react-router-dom';
-import type { NavigationProps } from './type';
+import { NavigationProps } from './type';
 import styles from './style.module.css';
 
-export const Navigation = (props: NavigationProps) => (
+export const Navigation: FC<NavigationProps> = ({ links }) => (
     <nav>
         <ul>
-            {props.links.map((link) => (
+            {links.map((link) => (
                 <li key={link.name}>
                     <NavLink className={styles.link} to={link.href}>
                         {link.name}

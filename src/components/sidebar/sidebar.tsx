@@ -1,9 +1,8 @@
 import { useState } from 'react';
-import { Button } from 'antd';
 import Sider from 'antd/lib/layout/Sider';
 import { Logout } from './logout';
 import { MenuSidebar } from './menu';
-import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { Trigger } from './trigger';
 import { Logo } from '@components/logo';
 import { Paths } from '@constants/enums/paths';
 import styles from './style.module.css';
@@ -26,6 +25,8 @@ export const Sidebar = () => {
         }
     };
 
+    const onCollapsed = () => setCollapsed(!collapsed);
+
     return (
         <Sider
             theme={'light'}
@@ -39,15 +40,7 @@ export const Sidebar = () => {
             width={width}
             style={{ position: isMobile ? 'fixed' : 'relative' }}
         >
-            <div className={styles.triggerWrapper}>
-                <Button
-                    data-test-id={isMobile ? 'sider-switch-mobile' : 'sider-switch'}
-                    className={styles.trigger}
-                    onClick={() => setCollapsed(!collapsed)}
-                >
-                    {collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-                </Button>
-            </div>
+            <Trigger isMobile={isMobile} collapsed={collapsed} onClick={onCollapsed} />
             <div className={styles.menu}>
                 <Logo href={Paths.MAIN} show={collapsed} />
                 <MenuSidebar isMobile={isMobile} collapsed={collapsed} />

@@ -7,28 +7,6 @@
         flex-direction: column;
     }
 
-    .triggerWrapper {
-        filter: drop-shadow(2px 1px 1px rgba(0, 0, 0, 0.05));
-        position: absolute;
-        top: calc(50% - 33px);
-        right: -2rem;
-        z-index: 100;
-
-        .trigger {
-            height: 6.6rem;
-            width: 2.1rem;
-            padding: 0;
-            border: none;
-            clip-path: polygon(0 0, 99% 11%, 99% 88%, 0% 100%);
-
-            svg {
-                fill: var(--character-light-secondary-45);
-                width: 1.4rem;
-                height: 1.4rem;
-            }
-        }
-    }
-
     .menu {
         display: flex;
         flex-direction: column;

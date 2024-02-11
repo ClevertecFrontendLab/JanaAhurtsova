@@ -13,8 +13,8 @@ export const MainContent = () => (
         <div className={styles.cardsWrapper}>
             <CardLayout>
                 <Typography.Title level={4} className={styles.app}>
-                    CleverFit — это не просто приложение, а твой личный помощник в&nbsp;мире
-                    фитнеса. Не откладывай на завтра — начни тренироваться уже сегодня!
+                    CleverFit — это не просто приложение, а твой личный помощник в мире фитнеса. Не
+                    откладывай на завтра — начни тренироваться уже сегодня!
                 </Typography.Title>
             </CardLayout>
             <CardStart />

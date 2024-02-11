@@ -1,11 +1,10 @@
+import { FC } from 'react';
 import { Card } from 'antd';
 import { CardLayoutProps } from './type';
 import styles from './style.module.css';
 
-export const CardLayout = (props: CardLayoutProps) => {
-    return (
-        <Card className={`${styles.card} ${props.class}`} bordered={false}>
-            {props.children}
-        </Card>
-    );
-};
+export const CardLayout: FC<CardLayoutProps> = ({ children, additionalClass }) => (
+    <Card className={`${styles.card} ${additionalClass}`} bordered={false}>
+        {children}
+    </Card>
+);
