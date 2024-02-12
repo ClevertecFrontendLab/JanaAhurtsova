@@ -23,6 +23,7 @@
         .title {
             font-size: 2.4rem;
             font-weight: 500;
+            letter-spacing: -0.3px;
         }
     }
 }

@@ -1,13 +1,14 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import Sider from 'antd/lib/layout/Sider';
 import { Logout } from './logout';
 import { MenuSidebar } from './menu';
 import { Trigger } from './trigger';
 import { Logo } from '@components/logo';
 import { Paths } from '@constants/enums/paths';
+import { SiderProps } from './type';
 import styles from './style.module.css';
 
-export const Sidebar = () => {
+export const Sidebar: FC<SiderProps> = ({setCollapsedSider}) => {
     const [collapsed, setCollapsed] = useState(false);
     const [collapsedWidth, setCollapsedWidth] = useState(64);
     const [width, setWidth] = useState(208);
@@ -25,7 +26,10 @@ export const Sidebar = () => {
         }
     };
 
-    const onCollapsed = () => setCollapsed(!collapsed);
+    const onCollapsed = () => {
+        setCollapsed(!collapsed);
+        setCollapsedSider(!collapsed);
+    };
 
     return (
         <Sider

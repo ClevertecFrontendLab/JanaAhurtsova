@@ -34,7 +34,7 @@ export const MenuSidebar: FC<MobileMode> = ({ isMobile, collapsed }) => {
         <Menu
             items={items}
             mode='inline'
-            inlineIndent={!isMobile ? (collapsed ? 24 : 16) : 8}
+            inlineIndent={!isMobile ? (collapsed ? 24 : 17) : 8}
             className={styles.menu}
         />
     );
