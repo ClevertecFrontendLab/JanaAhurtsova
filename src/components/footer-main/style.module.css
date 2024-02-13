@@ -1,4 +1,5 @@
 .footer {
+
     .link {
         display: flex;
         align-items: end;
@@ -16,8 +17,15 @@
     }
 }
 
+@media screen and (max-width: 900px){
+    .footer {
+        margin-top: 8.1rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .footer {
+        margin-top: 0;
 
         .link {
             display: flex;

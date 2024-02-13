@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { Layout, Row, Grid, Col } from 'antd';
+import { Layout } from 'antd';
 import { Sidebar } from '@components/sidebar';
 import { Header } from '@components/header';
 import { MainContent } from '@components/main-content';
 import { FooterMain } from '@components/footer-main';
 import light from '../../assets/main-page/Main page_light.png';
+import style from './style.module.css';
 
-const {useBreakpoint} = Grid;
 export const MainPage: React.FC = () => {
     const [collapsedSider, setCollapsedSider] = useState(true);
-    const {md} = useBreakpoint();
 
     return (
         <Layout
@@ -19,14 +18,12 @@ export const MainPage: React.FC = () => {
             }}
         >
             <Sidebar setCollapsedSider={setCollapsedSider} />
-            <Layout>
+            <Layout className={style.main}>
                 <Header />
-                <Row gutter={!md ? [0, 0] : [0, 156]} >
+                <Layout className={style.content} >
                     <MainContent collapsed={collapsedSider} />
-                    <Col span={24}>
                         <FooterMain collapsed={collapsedSider} />
-                    </Col>
-                </Row>
+                </Layout>
             </Layout>
         </Layout>
     );
