@@ -1,0 +1,19 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    max-width: 80rem;
+
+    .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        .app {
+            font-weight: 500;
+            margin: 0;
+            color: var(--character-light-title-85);
+            line-height: 1.3;
+        }
+    }
+}

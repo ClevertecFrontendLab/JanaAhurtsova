@@ -1,0 +1,29 @@
+:global ul.ant-menu.ant-menu-inline {
+    border-right: none;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    z-index: 200;
+    overflow: hidden;
+
+    :global li.ant-menu-item.ant-menu-item-only-child {
+        margin: 0;
+    }
+
+    .icon {
+        color: var(--primary-light-9);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu {
+        gap: 1rem;
+
+        :global li.ant-menu-item.ant-menu-item-only-child {
+            padding: 0 0.8rem;
+        }
+    }
+}

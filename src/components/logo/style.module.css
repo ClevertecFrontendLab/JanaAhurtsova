@@ -1,0 +1,23 @@
+.cleverfit {
+    object-fit: contain;
+    width: 13.3rem;
+    margin-left: -1.5rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fit {
+    width: 3.5rem;
+    height: 3.34rem;
+}
+
+@media screen and (max-width: 576px) {
+    .cleverfit {
+        width: 7.2rem;
+        margin-left: 0;
+    }
+}

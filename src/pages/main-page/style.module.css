@@ -1,0 +1,17 @@
+@media screen and (max-width: 900px){
+    .main {
+        min-height: 1194px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .content {
+        gap: 15.6rem;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main {
+        min-height: 0;
+    }
+}
