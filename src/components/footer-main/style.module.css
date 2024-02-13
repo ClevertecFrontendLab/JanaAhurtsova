@@ -1,6 +1,4 @@
 .footer {
-    margin-top: 15.6rem;
-
     .link {
         display: flex;
         align-items: end;
@@ -18,15 +16,8 @@
     }
 }
 
-@media screen and (max-width: 900px){
-    .footer {
-        margin-top: 23.7rem;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .footer {
-        margin-top: 0;
 
         .link {
             display: flex;

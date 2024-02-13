@@ -7,7 +7,7 @@ import styles from './style.module.css';
 const { useBreakpoint } = Grid;
 
 export const Header = () => {
-    const { xs, sm } = useBreakpoint();
+    const { xs, sm, lg } = useBreakpoint();
 
     return (
         <header className={styles.header}>
@@ -22,7 +22,7 @@ export const Header = () => {
                 <Col md={4} sm={7} xs={3}>
                     <div className={styles.settings}>
                         {sm && (
-                            <Button type='text' icon={<SettingOutlined />}>
+                            <Button type='text' icon={lg? <SettingOutlined />: null}>
                                 Настройки
                             </Button>
                         )}

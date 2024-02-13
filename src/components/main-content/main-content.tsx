@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { Typography, Grid } from 'antd';
-import { Content } from 'antd/lib/layout/layout';
 import { CardStart } from './card-start';
 import { Benefits } from './benefits';
 import { CardLayout } from '@components/card-layout';
 import { MainContentProps } from './type';
 import styles from './style.module.css';
+import { Content } from 'antd/lib/layout/layout';
 
 const {useBreakpoint} = Grid;
 

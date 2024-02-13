@@ -12,6 +12,7 @@
 
     :global .ant-card-body {
         padding: 1.6rem 0;
+        line-height: 1.5;
     }
 
     .link {
